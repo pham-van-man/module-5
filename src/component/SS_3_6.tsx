@@ -6,8 +6,8 @@ const Login = (props: { onLogOut: () => void }) => {
     React.useEffect(() => {
         return () => {
             alert("Goodbye!!!");
-        };
-    }, []);
+        }
+    },[]);
     return (
         <div className="container d-flex align-items-center text-center">
             <div className="form-signin">
@@ -50,7 +50,7 @@ const LogOut = () => {
         }
     }
     if (isLoggedIn) {
-        return <Login onLogOut={()=>setIsLoggedIn(false)}/>;
+        return <Login onLogOut={() => setIsLoggedIn(false)}/>;
     }
     return (
         <div className="container d-flex align-items-center text-center">

@@ -22,7 +22,7 @@ const Table = () => {
         setStudent({
             ...student,
             [name]: value
-        })
+        });
         checkInvalidForm();
     }
     const handleSelect = (index: number) => {

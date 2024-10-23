@@ -9,13 +9,20 @@ import Body from "./component/SS_3_4";
 import LogOut from "./component/SS_3_6";
 import Todo from "./component/SS_3_7";
 import Table from "./component/SS_3_8";
+import Selector from "./component/SS_4_1";
+import MyClock from "./component/SS_4_1";
+import selectCar from "./component/SS_4_1";
+import SelectCar from "./component/SS_4_1";
+import Timer from "./component/SS_4_2";
+import {Counter1, Counter2} from "./component/SS_4_3";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 root.render(
     <React.StrictMode>
-        <Table/>
+        <Counter1/>
+        <Counter2/>
     </React.StrictMode>
 );
 
